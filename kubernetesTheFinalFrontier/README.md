@@ -28,3 +28,6 @@ Take note here, I am using virutalbox (and so I specified that).
 ```minikube status```
 
 <img src="images/minikubeStatus.png" width="650" height="150">
+
+## Running a Simple Application
+
