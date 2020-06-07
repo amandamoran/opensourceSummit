@@ -21,10 +21,10 @@ After installation is complete. You will want to start your first minikube kuber
 
 ```minikube start -p final --vm-driver=virtualbox``` 
 
-<img src="images/minikubeStart.png" width="650" height="250">
+<img src="images/miniKubeStart.png" width="650" height="250">
 
 Take note here, I am using virutalbox (and so I specified that).
 
 ```minikube status```
 
-<img src="images/miniKubeStatus.png" width="650" height="250">
+<img src="images/minikubeStatus.png" width="650" height="250">
