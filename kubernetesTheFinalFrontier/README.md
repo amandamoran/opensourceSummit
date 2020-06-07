@@ -41,10 +41,6 @@ Create a yaml file for our deployment by doing the following command:
 
 ```kubectl create deployment webapp --image=amoran06/picardtips --dry-run=client -o yaml > webapp.yaml```
 
-
-Note and credit: I was able to create this web application from this wonderful example: https://docker-curriculum.com/ I am not a web developer and so using the code found here https://github.com/prakhar1989/docker-curriculum/tree/master/flask-app to create my docker image was a life saver! Thanks to https://github.com/prakhar1989!! 
-
-
 Open up the yaml with the editor of your choice (VIM for the WIN) and you should see something that looks like this: 
 
 <img src="images/webApp.png" width="500" height="400">
@@ -65,8 +61,6 @@ Next we want to be able to see our website, we are going to need to expose our d
 
 You should see: ```service/webapp exposed``` if everything has worked! 
 
-Note and Credit: The kubernetes docs are wonderful! https://kubernetes.io/docs/tutorials/hello-minikube/ This helped guide me in making this tutorial. 
-
 Let's just on our services and pods 
 
 ```kubectl get pods,services```
@@ -79,3 +73,12 @@ Since we running locally we will need to create our loadbalancer by running mini
 ```minikube service webapp``` 
 
 The website Picard Tips should pop up in your local browser! Read the tips, they are great, thanks twitter! 
+
+
+
+
+## Resources and Credit
+
+The kubernetes docs are wonderful! https://kubernetes.io/docs/tutorials/hello-minikube/ This helped guide me in making this tutorial.
+
+I was able to create this web application from this wonderful example: https://docker-curriculum.com/ I am not a web developer and so using the code found here https://github.com/prakhar1989/docker-curriculum/tree/master/flask-app to create my docker image was a life saver! Thanks to https://github.com/prakhar1989!! 
