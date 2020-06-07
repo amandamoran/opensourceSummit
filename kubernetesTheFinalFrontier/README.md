@@ -1,6 +1,6 @@
 # Kubernetes: The Final Frontier 
 
-<img src="images/enterprise.png" width="550" height="250" style="vertical-align:middle" >
+<img src="images/enterprise.png" width="650" height="250" style="vertical-align:middle" >
 
 *This is an introduction to Kubernetes tutorial. 
 The continuing mission: to explore the strange new worlds of microservices, containerization, and their management. 
@@ -59,4 +59,23 @@ Now that we have generated and edited our yaml file, now its time to apply it.
 
 You should see: ```deployment.apps/webapp created``` if everything has gone to plan!
 
-Next 
+Next we want to be able to see our website, we are going to need to expose our deployment to the outside world by using a load balancer. This will give us an external IP address that we can hit in combination with the port 8080.  
+
+```kubectl expose deployment webapp --type=LoadBalancer --port=8080 --target-port=5000```
+
+You should seee: ```service/webapp exposed``` if everything has worked! 
+
+Note and Credit: The kubernetes docs are wonderful! https://kubernetes.io/docs/tutorials/hello-minikube/ This helped guide me in making this tutorial. 
+
+Let's just on our services and pods 
+
+```kubectl get pods,services```
+
+We should see both a service and pod named web-app. 
+<img src="images/podsAndService.png" width="500" height="400">
+
+Since we running locally we will need to create our loadbalancer by running minikube. 
+
+```minikube service webapp``` 
+
+The website Picard Tips should pop up in your local browser! Read the tips, they are great, thanks twitter! 
