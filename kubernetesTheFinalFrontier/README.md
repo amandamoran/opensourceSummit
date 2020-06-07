@@ -47,11 +47,11 @@ Note and credit: I was able to create this web application from this wonderful e
 
 Open up the yaml with the editor of your choice (VIM for the WIN) and you should see something that looks like this: 
 
-<img src="images/webApp.png" width="650" height="350">
+<img src="images/webApp.png" width="650" height="400">
 
 Next step is we will need to add a containerPort to our yaml configuration file. This is an **important** step as our flash app that we created for our website is running on port 5000, and we need to make sure that is exposed via kubernetes. 
 
-<img src="images/webAppContainerPort.png" width="650" height="350">
+<img src="images/webAppContainerPort.png" width="650" height="400">
 
 Now that we have generated and edited our yaml file, now its time to apply it. 
 
