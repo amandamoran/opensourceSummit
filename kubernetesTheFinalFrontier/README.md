@@ -63,7 +63,7 @@ Next we want to be able to see our website, we are going to need to expose our d
 
 ```kubectl expose deployment webapp --type=LoadBalancer --port=8080 --target-port=5000```
 
-You should seee: ```service/webapp exposed``` if everything has worked! 
+You should see: ```service/webapp exposed``` if everything has worked! 
 
 Note and Credit: The kubernetes docs are wonderful! https://kubernetes.io/docs/tutorials/hello-minikube/ This helped guide me in making this tutorial. 
 
