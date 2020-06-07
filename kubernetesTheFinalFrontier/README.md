@@ -32,10 +32,29 @@ Take note here, I am using virutalbox (and so I specified that).
 ## Running a Simple Application
 
 
+### Create a Pod
+
+```kubectl run hello --image=amoran06/hellofriends```
+
+This is a simple container that is printing out a message to all my new friends here at OsSummit. But when I deployed my container, my message didn't appear...
+
+### Check that Pod is Running 
+
+```kubectl get pods```
+
+### Let's Check the Logs
+
+```kubectl logs hello```
+
+### Verify you see the message
+
+<img src="images/helloFriends.png" width="650" height="150">
 
 
 
 ## Deploying a Website 
+
+### Create Yaml File 
 
 Create a yaml file for our deployment by doing the following command: 
 
@@ -45,9 +64,13 @@ Open up the yaml with the editor of your choice (VIM for the WIN) and you should
 
 <img src="images/webApp.png" width="500" height="400">
 
+### Edit Yaml File
+
 Next step is we will need to add a containerPort to our yaml configuration file. This is an **important** step as our flash app that we created for our website is running on port 5000, and we need to make sure that is exposed via kubernetes. 
 
 <img src="images/webAppContainerPort.png" width="500" height="400">
+
+### Apply Yaml File
 
 Now that we have generated and edited our yaml file, now its time to apply it. 
 
@@ -55,11 +78,15 @@ Now that we have generated and edited our yaml file, now its time to apply it.
 
 You should see: ```deployment.apps/webapp created``` if everything has gone to plan!
 
+### Creating a Load Balancer and Exposing our Deployment
+
 Next we want to be able to see our website, we are going to need to expose our deployment to the outside world by using a load balancer. This will give us an external IP address that we can hit in combination with the port 8080.  
 
 ```kubectl expose deployment webapp --type=LoadBalancer --port=8080 --target-port=5000```
 
 You should see: ```service/webapp exposed``` if everything has worked! 
+
+### Check that Services and Pods are Created 
 
 Let's just on our services and pods 
 
@@ -67,14 +94,18 @@ Let's just on our services and pods
 
 We should see both a service and pod named web-app. 
 
+### Use Minikube to create our Load Balancer
 
 Since we running locally we will need to create our loadbalancer by running Minikube. 
 
 ```minikube service webapp``` 
 
+### Check out this cool web site, that we deployed with Kubernetes!
+
 The website Picard Tips should pop up in your local browser! Read the tips, they are great, thanks twitter! 
 
 <img src="images/picardTip.png" width="700" height="300">
+
 
 ## Creating a Highly Available Application 
 
