@@ -66,9 +66,9 @@ Let's just on our services and pods
 ```kubectl get pods,services```
 
 We should see both a service and pod named web-app. 
-<img src="images/podsAndService.png" width="900" height="400">
 
-Since we running locally we will need to create our loadbalancer by running minikube. 
+
+Since we running locally we will need to create our loadbalancer by running Minikube. 
 
 ```minikube service webapp``` 
 
