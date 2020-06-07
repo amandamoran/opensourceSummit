@@ -1,6 +1,6 @@
 # Kubernetes: The Final Frontier 
 
-<img src="images/enterprise.png" width="550" height="250">
+<img src="images/enterprise.png" width="550" height="250" style="vertical-align:middle" >
 
 *This is an introduction to Kubernetes tutorial. 
 The continuing mission: to explore the strange new worlds of microservices, containerization, and their management. 
