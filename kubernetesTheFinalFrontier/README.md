@@ -76,6 +76,7 @@ The website Picard Tips should pop up in your local browser! Read the tips, they
 
 <img src="images/picardTip.png" width="700" height="300">
 
+## Creating a Highly Available Application 
 
 
 ## Resources and Credit
