@@ -1,6 +1,6 @@
 # Kubernetes: The Final Frontier 
 
-<img src="images/enterprise.jpg" width="550" height="250">
+<img src="images/enterprise.png" width="550" height="250">
 
 *This is an introduction to Kubernetes tutorial. 
 The continuing mission: to explore the strange new worlds of microservices, containerization, and their management. 
@@ -21,10 +21,10 @@ After installation is complete. You will want to start your first minikube kuber
 
 ```minikube start -p final --vm-driver=virtualbox``` 
 
-<img src="images/minikubeStart.jpg" width="550" height="250">
+<img src="images/minikubeStart.png" width="550" height="250">
 
 Take note here, I am using virutalbox (and so I specified that).
 
 ```minikube status```
 
-<img src="images/minikubeStatus.jpg" width="550" height="250">
+<img src="images/minikubeStatus.png" width="550" height="250">
