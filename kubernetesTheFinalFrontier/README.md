@@ -73,6 +73,7 @@ Since we running locally we will need to create our loadbalancer by running mini
 ```minikube service webapp``` 
 
 The website Picard Tips should pop up in your local browser! Read the tips, they are great, thanks twitter! 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Picard management tip: Keep a log of your journey. You will understand better by writing it down.</p>&mdash; Picard Tips (@PicardTips) <a href="https://twitter.com/PicardTips/status/1269388228248760320?ref_src=twsrc%5Etfw">June 6, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 
 
