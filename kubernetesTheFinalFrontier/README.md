@@ -104,7 +104,7 @@ Since we running locally we will need to create our loadbalancer by running Mini
 
 The website Picard Tips should pop up in your local browser! Read the tips, they are great, thanks twitter! 
 
-<img src="images/picardTip.png" width="700" height="300">
+<img src="images/picardTip.png" width="800" height="200">
 
 
 ## Creating a Highly Available Application 
@@ -112,6 +112,6 @@ The website Picard Tips should pop up in your local browser! Read the tips, they
 
 ## Resources and Credit
 
-The Kubernetes docs are wonderful! https://kubernetes.io/docs/tutorials/hello-minikube/ This helped guide me in making this tutorial.
+The Kubernetes docs are wonderful! https://kubernetes.io/docs/tutorials/hello-minikube/ This helped guide me in making this tutorial. https://kubernetes.io/blog/2019/07/23/get-started-with-kubernetes-using-python/
 
 I was able to create this web application from this wonderful example: https://docker-curriculum.com/ I am not a web developer and so using the code found here https://github.com/prakhar1989/docker-curriculum/tree/master/flask-app to create my docker image was a life saver! Thanks to https://github.com/prakhar1989!! 
