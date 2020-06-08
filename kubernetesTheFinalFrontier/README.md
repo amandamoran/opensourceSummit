@@ -7,23 +7,23 @@ The continuing mission: to explore the strange new worlds of microservices, cont
 To seek out new skills and new adventures. 
 To boldly go where no one has gone before!*
 
-This is a hands on tutorial! I will be giving time during the tutorial to follow along with me and install MiniKube, create a sample deployement, create a docker image, and launch a web application. It might not be possible for you to do all these things in real-time with me (as installation can always take a long time!), but the video will be available and these instructions will walk you through. Thank you and see you in the stars! 
+This is a hands on tutorial! I will be giving time during the tutorial to follow along with me and install Minikube, create a sample deployment, and launch a web application. It might not be possible for you to do all these things in real-time with me (as installation can always take a long time!), but the video will be available and these instructions will walk you through. Thank you and see you in the stars! 
 
 ## Installing MiniKube
-The Kubernetes docs have a fanastic guide to installing minikube on Linux, Mac, or Windows. Reminder, you will need to have a hypervisor installed, which might take some time. I am personally using VirutalBox.
+The Kubernetes docs have a fantastic guide to installing Minikube on Linux, Mac, or Windows. Reminder, you will need to have a hypervisor installed, which might take some time. I am personally using VirtualBox.
 
 https://kubernetes.io/docs/tasks/tools/install-minikube/
 
 
 
 ### Starting MiniKube
-After installation is complete. You will want to start your first minikube kubernertes cluster
+After installation is complete. You will want to start your first Minikube kubernertes cluster
 
 ```minikube start -p final --vm-driver=virtualbox``` 
 
 <img src="images/miniKubeStart.png" width="650" height="250">
 
-Take note here, I am using virutalbox (and so I specified that).
+Take note here, I am using virtualbox (and so I specified that).
 
 ```minikube status```
 
@@ -36,7 +36,7 @@ Take note here, I am using virutalbox (and so I specified that).
 
 ```kubectl run hello --image=amoran06/hellofriends```
 
-This is a simple container that is printing out a message to all my new friends here at OsSummit. But when I deployed my container, my message didn't appear...
+This is a simple container that is printing out a message to all my new friends here at OSSummit. But when I deployed my container, my message didn't appear...
 
 ### Check that Pod is Running 
 
@@ -60,19 +60,19 @@ Create a yaml file for our deployment by doing the following command:
 
 ```kubectl create deployment webapp --image=amoran06/picardtips --dry-run=client -o yaml > webapp.yaml```
 
-Open up the yaml with the editor of your choice (VIM for the WIN) and you should see something that looks like this: 
+Open up the yaml file with the editor of your choice (VIM for the WIN) and you should see something that looks like this: 
 
 <img src="images/webApp.png" width="500" height="400">
 
 ### Edit Yaml File
 
-Next step is we will need to add a containerPort to our yaml configuration file. This is an **important** step as our flash app that we created for our website is running on port 5000, and we need to make sure that is exposed via kubernetes. 
+Next step is we will need to add a containerPort to our yaml configuration file. This is an **important** step as our flash app that we created for our website is running on port 5000, and we need to make sure that is exposed via Kubernetes. 
 
 <img src="images/webAppContainerPort.png" width="500" height="400">
 
 ### Apply Yaml File
 
-Now that we have generated and edited our yaml file, now its time to apply it. 
+Now that we have generated and edited our yaml file, now it’s time to apply it. 
 
 ```kubectl apply -f webappl.yaml```
 
@@ -112,6 +112,6 @@ The website Picard Tips should pop up in your local browser! Read the tips, they
 
 ## Resources and Credit
 
-The kubernetes docs are wonderful! https://kubernetes.io/docs/tutorials/hello-minikube/ This helped guide me in making this tutorial.
+The Kubernetes docs are wonderful! https://kubernetes.io/docs/tutorials/hello-minikube/ This helped guide me in making this tutorial.
 
 I was able to create this web application from this wonderful example: https://docker-curriculum.com/ I am not a web developer and so using the code found here https://github.com/prakhar1989/docker-curriculum/tree/master/flask-app to create my docker image was a life saver! Thanks to https://github.com/prakhar1989!! 
