@@ -137,7 +137,7 @@ Shocking! Only 1. We will need to delete our current running pods and service.
 
 ```kubectl get pods```
 
-<img src="images/3pods.png" width="650" height="300">
+<img src="images/3pods.png" width="650" height="100">
 
 And let's doublecheck on our app! 
 
