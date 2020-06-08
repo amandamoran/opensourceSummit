@@ -115,7 +115,7 @@ If we do a ```kubectl get pods``` we wil see that we only have one webapp pod th
 
 Open ```webapp.yaml``` and find ```replicas```
 
-<img src="images/replicas.png" width="500" height="500">
+<img src="images/replicas.png" width="400" height="650">
 
 Edit this value to ```3``` and save the file. 
 
