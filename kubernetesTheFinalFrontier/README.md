@@ -109,6 +109,44 @@ The website Picard Tips should pop up in your local browser! Read the tips, they
 
 ## Creating a Highly Available Application 
 
+If we do a ```kubectl get pods``` we wil see that we only have one webapp pod that has been created. Let's say our Picard Managmenet tips site starts getting a lot of traffic, how are we going to scale up and make sure we have a highly available app? This is where pod replicas comes into play. 
+
+### Adding Replicas 
+
+Open ```webapp.yaml``` and find ```replicas```
+
+<img src="images/replicas.png" width="600" height="500">
+
+Edit this value to ```3``` and save the file. 
+
+```kubectl get pods``` --> How many will we see?
+
+#### Delete Pods and Services 
+
+Shocking! Only 1. We will need to delete our current running pods and service. 
+
+```kubectl delete deploy webapp```
+
+```kubectl delete service webapp```
+
+### Apply and Check Replica Count 
+
+```kubectl apply -f webapp.yaml```
+
+```kubectl expose deployment webapp --type=LoadBalancer --port=8080 --target-port=5000```
+
+```kubectl get pods```
+
+<img src="images/3pods.png" width="600" height="500">
+
+And let's doublecheck on our app! 
+
+```minikube service webapp```
+
+
+## Recap
+
+
 
 ## Resources and Credit
 
