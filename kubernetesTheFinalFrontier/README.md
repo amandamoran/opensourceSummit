@@ -104,7 +104,7 @@ Since we running locally we will need to create our loadbalancer by running Mini
 
 The website Picard Tips should pop up in your local browser! Read the tips, they are great, thanks twitter! 
 
-<img src="images/picardTip.png" width="800" height="400">
+<img src="images/picardTip.png" width="800" height="300">
 
 
 ## Creating a Highly Available Application 
