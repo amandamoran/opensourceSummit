@@ -146,7 +146,7 @@ And let's doublecheck on our app!
 
 ## Recap
 
-
+Let's recap on what we have learned in this tutorial. We have learned how to install a local instance of Kubernetes with Minikube. We have learned how to run a pod from a docker image. We have learned have to create a deployement, run a deployment, create a service, run a load balancer with Minikube, and make that service highly available. We have boldly gone where none have gone before (accept ... actually many have but WE all have learned something new!). 
 
 ## Resources and Credit
 
