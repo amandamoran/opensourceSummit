@@ -115,7 +115,7 @@ If we do a ```kubectl get pods``` we wil see that we only have one webapp pod th
 
 Open ```webapp.yaml``` and find ```replicas```
 
-<img src="images/replicas.png" width="600" height="500">
+<img src="images/replicas.png" width="500" height="400">
 
 Edit this value to ```3``` and save the file. 
 
@@ -137,7 +137,7 @@ Shocking! Only 1. We will need to delete our current running pods and service.
 
 ```kubectl get pods```
 
-<img src="images/3pods.png" width="600" height="500">
+<img src="images/3pods.png" width="500" height="300">
 
 And let's doublecheck on our app! 
 
