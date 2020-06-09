@@ -143,6 +143,14 @@ And let's doublecheck on our app!
 
 ```minikube service webapp```
 
+### Verify Replicas Work as Intented 
+
+```kubectl get pods```
+
+```kubectl delete pods webapp-<end your unique pod here>```
+
+```kubectl get pods```
+
 
 ## Recap
 
