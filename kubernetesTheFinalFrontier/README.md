@@ -29,6 +29,10 @@ Take note here, I am using virtualbox (and so I specified that).
 
 <img src="images/minikubeStatus.png" width="650" height="100">
 
+On a kubernetes cluster could do: 
+
+```kubectl get componentstatuses```
+
 ## Running a Simple Application
 
 
