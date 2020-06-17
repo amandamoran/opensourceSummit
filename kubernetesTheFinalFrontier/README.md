@@ -102,7 +102,7 @@ We should see both a service and pod named web-app.
 
 Since we running locally we will need to create our loadbalancer by running Minikube. 
 
-```minikube service webapp``` 
+```minikube service -p final webapp``` 
 
 ### Check out this cool web site, that we deployed with Kubernetes!
 
@@ -145,7 +145,7 @@ Shocking! Only 1. We will need to delete our current running pods and service.
 
 And let's doublecheck on our app! 
 
-```minikube service webapp```
+```minikube service -p final webapp```
 
 ### Verify Replicas Work as Intented 
 
